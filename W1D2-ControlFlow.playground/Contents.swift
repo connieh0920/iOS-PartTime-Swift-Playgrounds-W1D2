@@ -8,10 +8,14 @@
 //: Say we have a varaible we're going to use to keep track of how many bicycles we own:
 
 var bicycleCount = 100
+var AppleCount = 2
 
+var AppleName = "Apple"
 //: Now we want to print out a description of the number of bicycles we have:
 
 print("There are \(bicycleCount) bicycles")
+print("there are \(AppleCount) \(AppleName)")
+
 
 //: If our count is 1, this becomes an awkward sentence.
 
@@ -35,6 +39,21 @@ if someThing == otherThing {
     print("This bit of code should run")
 }
 
+var people = 4
+var helmet = 5
+
+
+if people < helmet {
+    print("We have lots of helmets")
+}
+else if people == helmet {
+    print("We have enough helmets")
+}
+else {
+    print("We dont have enough helmets")
+}
+
+
 //: There are a few things going on here. Let's look at them!
 //:
 //: 1. Curly-braces. We use the `{` and `}` symbols to start and end sections of code.
@@ -47,8 +66,16 @@ if someThing == otherThing {
 //:
 //: Now see if you can make an `if`/`else` statement that prints out a grammatically correct description of how many bicycles we have. I.e. "There is 1 bicycle" or "There are 100 bicycles".
 
-bicycleCount = 1
-
+bicycleCount = 0
+if bicycleCount == 100 {
+    print("There are 100 bicycles")
+}
+else if bicycleCount == 1{
+    print("There is 1 bicycle")
+}
+else if bicycleCount < 1{
+    print("We dont have any bicycle")
+}
 
 
 
@@ -69,7 +96,12 @@ bicycleCount = 0
 var inputString = "Do you like bicycles?"
 
 
-
+if inputString.hasSuffix("?") {
+    print("I think so!")
+}
+else {
+    print("You dont say!")
+}
 
 
 
